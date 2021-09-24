@@ -6,7 +6,7 @@ This Plugin depends on [ddc.vim](https://github.com/Shougo/ddc.vim) and [dein.vi
 
 ## Install
 
-```
+```vim
 call dein#begin()
 
 call dein#add('Shougo/ddc.vim')
