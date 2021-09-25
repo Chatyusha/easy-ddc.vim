@@ -8,15 +8,32 @@ This Plugin depends on [ddc.vim](https://github.com/Shougo/ddc.vim) and [dein.vi
 
 ### Install Deno
 
-#### Linux(x86\_64)/Mac(X86\_64)
+Execute the following commands to install [Deno](https://deno.land/) according to your OS and architecture.
 
- Please open a terminal and execute the following command.
+#### Linux(x86\_64)/Mac(X86\_64)
 
 ```sh
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
+#### Windows(Powershell)
 
+```ps1
+iwr https://deno.land/x/install/install.ps1 -useb | iex
+```
+
+#### Mac(M1)/Linux(Arm64)
+
+```sh
+# After installing cargo, build Deno.
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+git clone https://github.com/denoland/deno_install.git
+cd deno_install
+cargo install deno --locked
+```
+
+### Install ddc.vim
 #### dein
 
 ```vim
