@@ -6,7 +6,19 @@ This Plugin depends on [ddc.vim](https://github.com/Shougo/ddc.vim) and [dein.vi
 
 ## Install
 
-### dein
+### Install Deno
+
+#### Linux(x86\_64)/Mac(X86\_64)
+
+ Please open a terminal and execute the following command.
+
+```sh
+curl -fsSL https://deno.land/x/install/install.sh | sh
+```
+
+
+#### dein
+
 ```vim
 call dein#begin()
 
