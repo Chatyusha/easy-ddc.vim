@@ -33,6 +33,7 @@ cd deno_install
 cargo install deno --locked
 ```
 
+If you want more information, please look [here](https://deno.land/).
 ### Install ddc.vim
 #### dein
 
