@@ -1,0 +1,9 @@
+{
+  "repo":"Shougo/ddc-matcher_head",
+  "sources":"",
+  "sourceOptions":{
+    "_":{
+      "matchers": ["matcher_head"]
+    }
+  }
+}
