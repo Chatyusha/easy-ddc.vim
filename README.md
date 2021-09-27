@@ -2,7 +2,7 @@
 
 This is a plugin to simplify the configuration of [ddc.vim](https://github.com/Shougo/ddc.vim).
 
-This Plugin depends on [ddc.vim](https://github.com/Shougo/ddc.vim).
+This Plugin depends on [ddc.vim](https://github.com/Shougo/ddc.vim) and [dein.vim](https://github.com/Shougo/dein.vim/tree/c4cba34896da6e2300151789c3b0872883f456ec).
 
 ## Install
 
