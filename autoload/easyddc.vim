@@ -1,6 +1,7 @@
 let s:tmpdir = expand("<sfile>:p:h:h")."/tmp"
 let s:default_sources = ['ddc-around', 'ddc-matcher_head']
 let g:ddc_sources = get(g:,'ddc_sources',s:default_sources)
+let s:vital = vital#easyddc#new()
 
 function! easyddc#construct() abort
   let l:sources = []
@@ -30,3 +31,5 @@ function! easyddc#test() abort
   echo easyddc#construct()
 endfunction
 
+function! easyddc#_vital_check() abort
+endfunction
