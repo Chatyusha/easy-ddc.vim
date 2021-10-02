@@ -1,13 +1,12 @@
 let s:tmpdir = expand("<sfile>:p:h:h")."/tmp"
 let s:default_sources = ['ddc-around', 'ddc-matcher_head']
-let g:ddc_sources = get(g:,'ddc_sources',s:default_sources)
-let s:vital = vital#easyddc#new()
+let s:ddc_sources = get(g:,'ddc_sources',s:default_sources)
 
 function! easyddc#construct() abort
   let l:sources = []
   let l:sourceOptions = {}
   let l:repos = []
-  for i in g:ddc_sources
+  for i in s:ddc_sources
     let l:src = get(easyddc#loadtmp(i),'sources')
     let l:ops = get(easyddc#loadtmp(i),'sourceOptions')
     let l:repo = get(easyddc#loadtmp(i),'repo')
@@ -31,5 +30,8 @@ function! easyddc#test() abort
   echo easyddc#construct()
 endfunction
 
-function! easyddc#_vital_check() abort
+function! easyddc#install_sources() abort
+  let l:ddc_data = easyddc#construct()
+  call easyddc#manage#add_from_list(l:ddc_data["repos"])
+  call easyddc#manage#install()
 endfunction
