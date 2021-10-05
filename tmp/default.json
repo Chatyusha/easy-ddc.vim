@@ -1,0 +1,9 @@
+{
+  "repo":["Shougo/ddc-matcher_head","Shougo/ddc-sorter_rank"],
+  "sourceOptions":{
+    "_":{
+      "matchers": ["matcher_head"],
+      "sorters":["sorter_rank"]
+    }
+  }
+}

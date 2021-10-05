@@ -1,0 +1,9 @@
+{
+  "repo":"Shougo/ddc-omni",
+  "sources":"omni",
+  "sourceOption":{
+    "omni": {
+      "mark": "O"
+    }
+  }
+}

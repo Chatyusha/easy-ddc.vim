@@ -1,0 +1,10 @@
+{
+  "repo":"shun/ddc-vim-lsp",
+  "sources":"vim-lsp",
+  "sourceOptions":{
+    "vim-lsp":{
+      "matchers":["matcher_head"],
+      "mark":"lsp"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "repo":"LumaKernel/ddc-file",
+  "sources":"file",
+  "sourceOptions":{
+    "mark": "F",
+    "isVolatile": 1,
+    "forceCompletionPattern": "\S/\S*"
+  }
+}

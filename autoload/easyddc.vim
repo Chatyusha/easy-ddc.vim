@@ -1,5 +1,5 @@
 let s:tmpdir = expand("<sfile>:p:h:h")."/tmp"
-let s:default_sources = ['ddc-around', 'ddc-matcher_head']
+let s:default_sources = ['ddc-around', 'default']
 let s:ddc_sources = get(g:,'ddc_sources',s:default_sources)
 
 function! easyddc#construct() abort
@@ -14,7 +14,11 @@ function! easyddc#construct() abort
       let l:sources += [l:src]
     endif
     let l:sourceOptions = extend(l:sourceOptions,l:ops)
-    let l:repos += [l:repo]
+    if type(l:repo) == v:t_list
+      let l:repos += l:repo
+    else
+      let l:repos += [l:repo]
+    endif
   endfor
   return {"repos":l:repos,"src":l:sources,"ops":l:sourceOptions}
 endfunction
