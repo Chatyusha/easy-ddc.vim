@@ -2,7 +2,9 @@
 
 This is a plugin to simplify the configuration of [ddc.vim](https://github.com/Shougo/ddc.vim).
 
-This Plugin depends on [ddc.vim](https://github.com/Shougo/ddc.vim) and [dein.vim](https://github.com/Shougo/dein.vim/tree/c4cba34896da6e2300151789c3b0872883f456ec).
+**Note:** 
+This Plugin depends on [ddc.vim](https://github.com/shougo/ddc.vim) and [dein.vim](https://github.com/Shougo/dein.vim), 
+and [ddc.vim](https://github.com/shougo/ddc.vim) requires Neovim (0.5.0+ and of course, **latest** is recommended) or Vim 8.2.0662. 
 
 ## Install
 

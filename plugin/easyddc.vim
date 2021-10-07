@@ -7,7 +7,7 @@ let g:loaded_easyddc = 1
 call ddc#custom#patch_global('sources', easyddc#construct()["src"])
 call ddc#custom#patch_global('sourceOptions', easyddc#construct()["ops"])
 
-if !exists('g:easyddc_default_mapping') || g:easyddc_default_mapping == 1
+if exists('g:easyddc_default_mapping') || g:easyddc_default_mapping == 1
   " Mappings
 
   " <TAB>: completion.
