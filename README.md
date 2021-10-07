@@ -54,8 +54,21 @@ call dein#end()
 
 |option|meaning|default|
 |:-:|:-:|:-:|
-|ddc\_sources|ddc sources to use|`['[ddc-around](https://github.com/Shougo/ddc-around)']`|
+|ddc\_sources|ddc sources to use|`['ddc-around','default']`|
 
+## Templates
+
+The list of **ddc-sources** supported by this plugin, and templates are in `./tmp`
+
+I am going to add more **ddc-source** templates in the future.
+
+|template name|repository|
+|:-:|:-:|
+|default|[Shougo/ddc-macher\_head](https://github.com/Shougo/ddc-matcher_head) and [Shougo/ddc-sorter\_rank](https://github.com/Shougo/ddc-sorter_rank)|
+|ddc-around|[Shougo/ddc-around](https://github.com/Shougo/ddc-around)|
+|ddc-omni|[Shougo/ddc-omni](https://github.com/Shougo/ddc-omni)|
+|ddc-vim-lsp|[shun/ddc-vim-lsp](https://github.com/shun/ddc-vim-lsp)|
+|ddc-file|[LumaKernel/ddc-file](https://github.com/LumaKernel/ddc-file)|
 
 ## Example
 
