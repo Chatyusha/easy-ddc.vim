@@ -49,3 +49,15 @@ call dein#add('Chatyusha/easy-ddc.vim')
 
 call dein#end()
 ```
+
+## Options
+
+|option|meaning|default|
+|:-:|:-:|:-:|
+|ddc\_sources|ddc sources to use|`['[ddc-around](https://github.com/Shougo/ddc-around)']`|
+
+
+## Example
+
+## Usage
+
