@@ -76,7 +76,7 @@ and you can choose *ddc-sources* from [templates](#templates).
 
 For example, when you use `default` and `ddc-around`, set the global valiable *ddc_sources* as follows, `let g:ddc_sources = ['default', 'ddc-around']`
 
-### Example
+## Example
 
 (vimrc/init.vim)
 ```vim
