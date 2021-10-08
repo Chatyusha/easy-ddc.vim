@@ -70,7 +70,15 @@ I am going to add more **ddc-source** templates in the future.
 |ddc-vim-lsp|[shun/ddc-vim-lsp](https://github.com/shun/ddc-vim-lsp)|
 |ddc-file|[LumaKernel/ddc-file](https://github.com/LumaKernel/ddc-file)|
 
-## Example
-
 ## Usage
+Make an array of the *ddc-sources* you want to use and assign it to the global variable *ddc_sources*.(default `[default, ddc-around]`),
+and you can choose *ddc-sources* from [templates](## Templates).
 
+For example, when you use `default` and `ddc-around`, set the global valiable *ddc_sources* as follows, `let g:ddc_sources = ['default', 'ddc-around']`
+
+### Example
+
+(vimrc/init.vim)
+```vim
+let g:ddc_sources = ['default', 'ddc-around']
+```
