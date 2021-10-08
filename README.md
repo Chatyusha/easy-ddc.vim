@@ -76,7 +76,7 @@ and then run `call easyddc#install_sources()`
 You can choose *ddc-sources* from [templates](#templates).
 
 For example, when you use `default` and `ddc-around`, set the global valiable *ddc_sources* as follows, 
-`let g:ddc_sources = ['default', 'ddc-around']`
+      `let g:ddc_sources = ['default', 'ddc-around']`
 
 ## Example
 
