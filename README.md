@@ -72,7 +72,7 @@ I am going to add more **ddc-source** templates in the future.
 
 ## Usage
 Make an array of the *ddc-sources* you want to use and assign it to the global variable *ddc_sources*.(default `[default, ddc-around]`),
-and you can choose *ddc-sources* from [templates](##templates).
+and you can choose *ddc-sources* from [templates](#templates).
 
 For example, when you use `default` and `ddc-around`, set the global valiable *ddc_sources* as follows, `let g:ddc_sources = ['default', 'ddc-around']`
 
