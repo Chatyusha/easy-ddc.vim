@@ -1,0 +1,53 @@
+*easy-ddc*
+
+A plugin to simplify the configuration of ddc.vim
+
+Note
+This Plugin depends on ddc.vim and dein.vim, and requires Deno and
+Neovim (0.5.0+ and of course, latest is recommended) or Vim 8.2.0662. 
+
+* ddc : ”Ddc is the abbreviation of "dark deno-powered completion". 
+    It provides an extensible and asynchronous completion framework
+    for neovim/Vim8.” -- (Shougo, https://github.com/Shougo/ddc.vim)
+
+* dein.vim : ”Dein.vim is a dark powered Vim/Neovim plugin manager.”
+    -- (Shougo, https://github.com/Shougo/dein.vim)
+
+* Deno : ”Deno is a simple, modern and secure runtime for JavaScript 
+          and TypeScript that uses V8 and is built in Rust.”
+          -- ( https://deno.land/)
+
+========================================================================
+CONTENTS                                     *easy-ddc-contents*
+
+- INSTALL                                    |easy-ddc-install|
+  - INSTALL DENO                             |easy-ddc-install-deno|
+    - Mac,Linux (x86_64)
+    - Windows (PowerShell)
+    - Mac (Homebrew)
+    - Windows (Chocolatey)
+    - Windows (Scoop)
+    - Build
+  - INSTALL PLUGINS                          |easy-ddc-install-plugin|
+- VARIABLE                                   |easy-ddc-variable|
+- FUNCTIOIN                                  |easy-ddcunction|
+- USAGE                                      |easy-ddc-usage|
+- FREQUENTLY ASKED QUESTIONS (FAQ)           |easy-ddc-faq|
+- LICENSE                                    |easy-ddc-license|
+- CHANGELOG                                  |easy-ddc-changelog|
+
+
+========================================================================
+INSTALL                                       *easy-ddc-install*
+
+
+INSTALL DENO
+
+INSTALL PLUGINS
+
+>
+  " dein.vim
+  call dein#add('Shougo/ddc.vim')
+  call dein#add('vim-denops/denops.vim')
+  call dein#add('Chatyusha/easy-ddc.vim')
+<
