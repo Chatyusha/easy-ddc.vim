@@ -4,6 +4,6 @@
   "sourceOptions":{
     "mark": "F",
     "isVolatile": 1,
-    "forceCompletionPattern": "\S/\S*"
+    "forceCompletionPattern": "\\S\/\\S*"
   }
 }
