@@ -3,8 +3,8 @@
   "sources":"vim-lsp",
   "sourceOptions":{
     "vim-lsp":{
-      "matchers":["matcher_head"],
-      "mark":"lsp"
+      "mark":"lsp",
+      "matchers":["matcher_head"]
     }
   }
 }

@@ -58,7 +58,7 @@ call dein#end()
 
 ## Templates
 
-The list of **ddc-sources** supported by this plugin, and templates are in `./tmp`
+<Comment this line missing grammer>The list of **ddc-sources** supported by this plugin, and templates are in `./tmp`
 
 I am going to add more **ddc-source** templates in the future.
 

@@ -1,9 +1,12 @@
+*easyddc.txt*   For NVIM v0.5.0   Last change:  2021  October 15
+----------------------------------------------------------------------------------------
 *easy-ddc*
 
 A plugin to simplify the configuration of ddc.vim
 
 Note
-This Plugin depends on ddc.vim and dein.vim, and requires Deno and
+
+  This Plugin depends on ddc.vim and dein.vim, and requires Deno and
 Neovim (0.5.0+ and of course, latest is recommended) or Vim 8.2.0662. 
 
 * ddc : ”Ddc is the abbreviation of "dark deno-powered completion". 
@@ -17,31 +20,55 @@ Neovim (0.5.0+ and of course, latest is recommended) or Vim 8.2.0662.
           and TypeScript that uses V8 and is built in Rust.”
           -- ( https://deno.land/)
 
-========================================================================
+========================================================================================
 CONTENTS                                     *easy-ddc-contents*
 
 - INSTALL                                    |easy-ddc-install|
   - INSTALL DENO                             |easy-ddc-install-deno|
-    - Mac,Linux (x86_64)
-    - Windows (PowerShell)
-    - Mac (Homebrew)
-    - Windows (Chocolatey)
-    - Windows (Scoop)
-    - Build
+    - Mac,Linux (x86_64)                     |easy-ddc-install-deno(Mac,Linux/x86_64)|
+    - Windows (PowerShell)                   |easy-ddc-install-deno(Windows/PowerShell)|
+    - Mac (Homebrew)                         |easy-ddc-install-deno(Mac/Homebrew)|
+    - Build                                  |easy-ddc-install-deno(Build)|
   - INSTALL PLUGINS                          |easy-ddc-install-plugin|
-- VARIABLE                                   |easy-ddc-variable|
+- VARIABLES                                  |easy-ddc-variables|
 - FUNCTIOIN                                  |easy-ddcunction|
 - USAGE                                      |easy-ddc-usage|
+- SITES                                      |easy-ddc-sites|
 - FREQUENTLY ASKED QUESTIONS (FAQ)           |easy-ddc-faq|
 - LICENSE                                    |easy-ddc-license|
 - CHANGELOG                                  |easy-ddc-changelog|
 
 
-========================================================================
-INSTALL                                       *easy-ddc-install*
+========================================================================================
+INSTALL                                                               *easy-ddc-install*
 
 
-INSTALL DENO
+INSTALL DENO                                                     *easy-ddc-install-deno*
+
+  Execute the following commands to install Deno according to your 
+OS and architecture or package managers.
+
+
+Mac,Linux (x86_64)                             *easy-ddc-install-deno(Mac,Linux/x86_64)*
+>
+  "install.sh (ShellScript)"
+
+  curl -fsSL https://deno.land/x/install/install.sh | sh
+<
+Windows (x86_64)                             *easy-ddc-install-deno(Windows/PowerShell)*
+>
+  "install.ps1 (PowerShell)"
+
+  iwr https://deno.land/x/install/install.ps1 -useb | iex
+<
+Mac (Homebrew)                                        *easy-ddc-install-deno(Homebrew)*
+>
+  brew install deno
+<
+Build                                                    *easy-ddc-install-deno(Build)*
+>
+  cargo install deno --locked
+<
 
 INSTALL PLUGINS
 
@@ -51,3 +78,10 @@ INSTALL PLUGINS
   call dein#add('vim-denops/denops.vim')
   call dein#add('Chatyusha/easy-ddc.vim')
 <
+
+
+========================================================================================
+VARIABLES                                                           *easy-ddc-variables*
+
+ddc_sources ... ddc-sources you use and they can be selected from templates.
+(default:`ddc_sources = ['default', 'ddc-around']`)
